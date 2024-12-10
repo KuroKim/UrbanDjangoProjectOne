@@ -1,0 +1,12 @@
+{% extends 'C:\Users\Kuro\PycharmProjects\UrbanDjangoProjectOne\UrbanDjangoOne\templates\fourth_task\menu.html' %}
+
+{% block pagename %}Товары{% endblock %}
+
+{% block content %}
+<h1>Товары</h1>
+<ul>
+    {% for item in items %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
