@@ -19,6 +19,7 @@
       <list>
         <option value="$MODULE_DIR$/UrbanDjangoOne/templates" />
         <option value="$MODULE_DIR$/UrbanDjangoOne/templates/second_task" />
+        <option value="$MODULE_DIR$/UrbanDjangoOne/templates/third_task" />
       </list>
     </option>
   </component>
