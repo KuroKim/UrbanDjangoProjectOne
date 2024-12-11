@@ -19,6 +19,7 @@ from django.urls import path
 from task2.views import task2_func_view, Task2ClassView
 # from task3.views import Task3Tovar, Task3Korzina, Task3Main
 from task4.views import Task3Tovar, Task3Korzina, Task3Main
+from task5.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +28,6 @@ urlpatterns = [
     path('main/', Task3Main.as_view(), name="glavnaya"),
     path('main/items/', Task3Tovar.as_view(), name="tovar"),
     path('main/cart/', Task3Korzina.as_view(), name="korzina"),
+    path('', sign_up_by_html, name='html_sign_up'),
+    path('django_sign_up/', sign_up_by_django, name='django_sign_up'),
 ]
